@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns.kk.customview.CustomLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <com.makeramen.roundedimageview.RoundedImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/article_row_thumb"
+        android:layout_width="130dp"
+        android:layout_height="92dp"
+        android:background="@color/gray"
+        android:scaleType="centerCrop"
+        app:riv_corner_radius="10dip"
+        app:riv_mutate_background="true"
+        app:riv_oval="false" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp">
+
+        <ns.kk.customview.CustomTextView
+            android:id="@+id/article_row_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="3"
+            android:fontFamily="@font/roboto_bold"
+            android:text="tittle"
+            android:gravity="left|top"
+            tools:ignore="MissingConstraints" />
+
+        <ns.kk.customview.CustomTextView
+            android:id="@+id/article_row_datetime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="65dp"
+            android:text="20mins"
+            android:textSize="12dp"
+            android:fontFamily="@font/roboto_regular"
+            android:textColor="@color/toggle_unselect"
+            tools:ignore="MissingConstraints" />
+
+        <ImageView
+            android:id="@+id/article_row_bookmark_share"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/bookmark_layout"
+            android:background="@drawable/ic_share" />
+
+
+        <RelativeLayout
+            android:id="@+id/bookmark_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="60dp"
+            android:layout_marginRight="10dp">
+
+            <ImageView
+                android:id="@+id/article_row_bookmark_add"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/ic_bookmark_add"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                tools:ignore="MissingConstraints" />
+
+            <ImageView
+                android:id="@+id/article_row_bookmark_remove"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="visible"
+                android:layout_margin="5dp"
+                android:background="@drawable/ic_bookmark_remove"
+                tools:ignore="MissingConstraints" />
+        </RelativeLayout>
+    </RelativeLayout>
+</ns.kk.customview.CustomLinearLayout>

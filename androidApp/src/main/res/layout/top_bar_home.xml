@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns.kk.customview.CustomRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="15dp">
+
+    <ImageView
+        android:id="@+id/top_hembargar_icon_press"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:background="@drawable/ic_hembargar" />
+
+    <ImageView
+        android:id="@+id/top_back_icon_press"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:background="@drawable/ic_back_icon" />
+
+    <ImageView
+        android:id="@+id/top_icon_show"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/splace" />
+
+    <ImageView
+        android:id="@+id/top_profile_icon_press"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:visibility="invisible"
+        android:background="@drawable/ic_profile" />
+
+</ns.kk.customview.CustomRelativeLayout>

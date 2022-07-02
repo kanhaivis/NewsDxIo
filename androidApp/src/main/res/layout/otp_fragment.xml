@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns.kk.customview.CustomRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/splace" />
+
+        <ns.kk.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Lets Authenticate / \n Your Account"
+            android:textColor="@color/black"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ns.kk.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Hello user, you have \na great journal"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <ns.kk.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="Enter OTP" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="left"
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edt_bg"
+                android:gravity="center"
+                android:hint="1" />
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edt_bg"
+                android:gravity="center"
+                android:hint="2" />
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edt_bg"
+                android:gravity="center"
+                android:hint="3" />
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginRight="8dp"
+                android:background="@drawable/edt_bg"
+                android:gravity="center"
+                android:hint="4" />
+
+            <EditText
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:background="@drawable/edt_bg"
+                android:gravity="center"
+                android:hint="5" />
+
+        </LinearLayout>
+
+
+        <ns.kk.customview.CustomTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="The secure 6 digit OPT is sent to your registered \n email Id: kk@kk.com" />
+
+        <Button
+            android:id="@+id/verify_btn_press"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/btn_bg"
+            android:text="Verify"
+            android:textAllCaps="false"
+            android:textColor="@color/white" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:gravity="center">
+
+        <ns.kk.customview.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Powered by"
+            android:textSize="10sp" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_newsdx_plane_logo" />
+
+    </RelativeLayout>
+
+</ns.kk.customview.CustomRelativeLayout>

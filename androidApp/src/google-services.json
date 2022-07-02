@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "919359413102",
+    "project_id": "newsdxio",
+    "storage_bucket": "newsdxio.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:919359413102:android:653cfd106b227f0846bf7f",
+        "android_client_info": {
+          "package_name": "ns.kk.newsdxio.android"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "919359413102-jmfk3h43uduh7m1m3ure2df3qtln77aq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ns.kk.newsdxio.android",
+            "certificate_hash": "a4c88b70cda0aaab0866df1179f1704290fde953"
+          }
+        },
+        {
+          "client_id": "919359413102-k62om5uu66s3ocaeb7p9gal2rf8a49dq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3TkeCDyrHHDgp822_W1dJl41VcB5jAH4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "919359413102-k62om5uu66s3ocaeb7p9gal2rf8a49dq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns.kk.customview.CustomRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="10dp">
+
+    <ns.kk.customview.CustomTextView
+        android:id="@+id/row_myfeed_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="tittle"
+        android:fontFamily="@font/roboto_medium"
+        tools:ignore="MissingConstraints" />
+
+    <androidx.appcompat.widget.SwitchCompat
+        android:id="@+id/customSwitch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:thumb="@drawable/thumb_switch"
+        app:track="@drawable/track" />
+
+
+</ns.kk.customview.CustomRelativeLayout>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns.kk.customview.CustomRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <ns.kk.customview.CustomTabLayout
+        android:id="@+id/home_tab_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabGravity="fill"
+        app:tabIndicator="@null"
+        android:background="@color/white"
+        app:tabMode="scrollable" />
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/home_viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/home_tab_layout" />
+
+
+</ns.kk.customview.CustomRelativeLayout>

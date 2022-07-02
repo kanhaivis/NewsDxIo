@@ -1,0 +1,23 @@
+CREATE TABLE bookMarkEntity (
+    id INTEGER NOT NULL PRIMARY KEY ,
+    article_id TEXT NOT NULL
+);
+
+getBookmarkArticleById:
+SELECT *
+FROM bookMarkEntity
+WHERE article_id = :aid;
+
+
+getAllBookmarArticle:
+SELECT *
+FROM bookMarkEntity;
+
+insertBookmarkArticle:
+INSERT OR REPLACE
+INTO bookMarkEntity
+VALUES (?, ?);
+
+deleteBookmarkArticle:
+DELETE FROM bookMarkEntity
+WHERE article_id = :aid;

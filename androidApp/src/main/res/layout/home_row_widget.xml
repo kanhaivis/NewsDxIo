@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns.kk.customview.CustomLinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/gray_1"
+    android:padding="10dp">
+
+    <ns.kk.customview.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/home_row_widget_name_txt"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="22dp"
+        android:text="kkkk"
+        />
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/home_row_widget_recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        />
+
+</ns.kk.customview.CustomLinearLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ns.kk.customview.CustomRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include
+        android:id="@+id/topPanel"
+        layout="@layout/top_bar_home" />
+
+
+    <ImageView
+        android:id="@+id/alpine_icon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/topPanel"
+        android:layout_marginLeft="10dp"
+        android:background="@drawable/splace" />
+
+    <ns.kk.customview.CustomTextView
+        android:id="@+id/subscription_title_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alpine_icon"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Subscription Plan"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:textSize="30sp" />
+
+
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/subscription_viewpager2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="100dp"
+        android:layout_below="@+id/subscription_title_txt"
+        android:layout_marginTop="20dp" />
+
+
+    <ns.kk.customview.CustomTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/email"
+        android:gravity="center"
+        android:text="For support contact"/>
+
+    <ns.kk.customview.CustomTextView
+        android:id="@+id/email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="30dp"
+        android:gravity="center"
+        android:text="wecare@alpinenews.com" />
+
+
+</ns.kk.customview.CustomRelativeLayout>
